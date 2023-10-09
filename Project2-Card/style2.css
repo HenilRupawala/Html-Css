@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentbox {
+  height: 600px;
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.contentbox img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.contentbox #productdetails {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.amountbox {
+  background-color: rgb(137, 193, 231);
+  border-radius: 10px;
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.leftbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+#textbox {
+  width: 50px;
+}
+
+#imgbox img {
+  height: 3rem;
+}
+
+#paymentbutton {
+  height: 9%;
+  width: 80%;
+  background-color: rgb(24, 24, 185);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.664);
+  font-size: 1em;
+}
+
+.cancelbox a {
+  text-decoration: none;
+  color: rgb(37, 29, 29);
+  font-weight: bold;
+  font-size: large;
+}
