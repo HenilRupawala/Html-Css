@@ -1,0 +1,86 @@
+.contentBox{
+    width: 50%;
+    margin-left: 25vw;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 100px;
+    padding: 2rem;
+    box-shadow: 5px 5px 30px black;
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.leftbox h1{
+    font-family: cursive;
+    font-size: 1.8rem;
+}
+
+.leftbox h2{
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+
+.leftbox .ingbox,.recipebox{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightbox{
+    position: relative;
+    height: 300px;
+    transition: all 0.3s linear 0s;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+}
+
+.rightbox .overlay{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(66, 64, 64, 0.705);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightbox img{
+    height: 300px;
+    border-radius: 20px;
+}
+
+.rightbox .overlay a{
+    text-decoration: none;
+    color: azure;
+    font-size: 1.2rem;
+}
+
+.rightbox:hover{
+    transform: scale(1.12);
+}
+
+.rightbox a:hover{
+    color: rgba(24, 201, 24, 0.87);
+}
+
+.rightbox:hover .overlay{
+    opacity: 1;
+}
